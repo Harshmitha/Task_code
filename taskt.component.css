@@ -1,0 +1,23 @@
+input{
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 30%;
+
+}
+
+button{
+    width: 15%;
+    color: black;
+    border-radius: 5px;
+    background-color:rgb(235, 226, 226);
+    border-color: black;
+    
+}
+
+table,td,th,tr{
+    margin-top: 30px;
+    margin-left: 15px;
+    border: 1px black solid;
+    border-collapse: collapse;    
+}

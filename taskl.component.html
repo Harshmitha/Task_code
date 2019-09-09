@@ -1,0 +1,23 @@
+<html>
+    <body>
+<h2>Login Form</h2>
+<form [formGroup]="store1">
+    <div class="form-group"><br>
+        <div class="a">
+        <label>User Name:</label>
+        <input type="text" formControlName="name" placeholder="Enter the User Name" class="form-control" ><br>
+    
+        
+            <label>Password:</label>
+            <input type="password" formControlName="pass" placeholder="Enter the Password" class="form-control"><br><br>
+        
+            <!-- <button (click)="submit()">Save</button>  -->
+            <button  (click)="save(store1.value)">Login</button><br><br>
+           <p> Don't have an account?<a [routerLink]="['/taskr']">Register here</a></p>
+ 
+        </div>
+    </div>
+    
+</form>
+</body>
+</html>

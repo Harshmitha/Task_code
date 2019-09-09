@@ -1,0 +1,27 @@
+<html>
+    <body>
+<h2>Add Movie Details</h2>
+<form [formGroup]="store2">
+    <div class="form-group"><br>
+        <div class="a">
+        <label>Movie Name:</label>
+        <input type="text" formControlName="name" class="form-control" ><br>
+    
+        
+            <label>Language:</label>
+            <input type="text" formControlName="lang" class="form-control" ><br>
+        
+        
+            <label>Genre:</label>
+            <input type="text" formControlName="genre" class="form-control" ><br>
+
+            <button  (click)="button(store2.value)">Save</button>
+            <button  (click)="list()">Cancel</button><br><br>
+           <p>Click here to go back...<a [routerLink]="['/taskl']">Click here</a></p>
+           
+        </div>
+    </div>
+    
+</form>
+</body>
+</html>

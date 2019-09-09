@@ -1,0 +1,26 @@
+<html>
+    <body>
+<h2>Registration Form</h2>
+<form [formGroup]="store">
+    <div class="form-group"><br>
+        <div class="a">
+        <label>User Name:</label>
+        <input type="text" formControlName="name" class="form-control" placeholder="Enter the User Name"><br>
+    
+        
+            <label>Password:</label>
+            <input type="password" formControlName="pass" class="form-control" placeholder="Enter the Password"><br>
+        
+        
+            <label>Confirm Password:</label>
+            <input type="password" formControlName="confirm" class="form-control" placeholder="Enter the Confirm Password"><br><br>
+
+            <button  (click)="sub(store.value)">Register</button><br><br>
+           <p> Already have an account?<a [routerLink]="['/taskl']">Login here</a></p>
+           
+        </div>
+    </div>
+    
+</form>
+</body>
+</html>
